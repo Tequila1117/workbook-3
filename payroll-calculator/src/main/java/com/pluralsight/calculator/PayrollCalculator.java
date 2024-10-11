@@ -2,7 +2,7 @@ package com.pluralsight.calculator;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.ArrayList;
+import java.util.Array
 
 public class PayrollCalculator {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class PayrollCalculator {
             BufferedReader br = new BufferedReader(fileReader);
 
             String line; // Variable to hold each line of the file
-            br.readLine();
+            br.readLine(); // reads the line of text
 
             // Read each line of the file until there are no more lines
             while ((line = br.readLine()) != null) {
