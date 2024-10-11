@@ -25,9 +25,9 @@ public class FormatDates {
         System.out.println(formattedDate3); // Shows the date in format Month day, year
 
         // Format 4 is Day of the week, Month day, year HH:mm in GMT
-        DateTimeFormatter format4 = DateTimeFormatter.ofPattern("EEEE, MMM d, yyyy HH:mm");
-        LocalDateTime now = LocalDateTime.now(ZoneId.of("GMT"));
-        String formattedDate4 = currentDateTime.format(format4);
+        DateTimeFormatter format4 = DateTimeFormatter.ofPattern("EEEE, MMM d, yyyy hh:mm");
+        LocalDateTime now = LocalDateTime.now(ZoneId.of("Europe/London"));
+        String formattedDate4 = now.format(format4);
         System.out.println(formattedDate4); // Shows the date in GMT/UTC time
 
         // Challenge: Show this format "5:02 on 05-Sep-2021 in local time zone"
